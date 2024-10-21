@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('./assets/bg.svg') no-repeat center center fixed;
+  background-size: cover;
+  background-color: #041429;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  background-color: #0b6679;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.quiz_wrapper {
+  padding: 2.5rem;
+  color: #fff;
+  text-align: center;
+}
+
+.quiz_wrapper h3 {
+  font-weight: 300;
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.quiz_wrapper h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  margin-top: 2.5rem;
+  outline: none;
+  border: none;
+  background-color: #28a745;
+  color: #fff;
+  padding: 0.8rem 2.5rem;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #218838;
+}
+
+.quiz_wrapper p {
+  margin: 2rem 0;
+  font-size: 1.2rem;
+}
+
+.quiz .quiz_header {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 2rem;
+  font-size: 1.4rem;
+  text-align: left;
+}
+
+.quiz .quiz_body {
+  padding: 2.5rem;
+}
+
+.quiz .quiz_body li {
+  list-style-type: none;
+  margin: 1.5rem 0;
+  color: #fff;
+  font-size: 1.3rem;
+  background-color: #a27438;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.quiz .quiz_body li:hover {
+  margin-left: 1rem;
+  background-color: #34495e;
+}
+
+.quiz .quiz_body li.correct {
+  background-color: #28a745;
+  margin-left: 1rem;
+  cursor: not-allowed;
+}
+
+.quiz .quiz_body li.wrong {
+  background-color: #e74c3c;
+  cursor: not-allowed;
+  color: white;
+}
+
+.quiz .quiz_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 1.5rem 2.5rem;
+  font-size: 1.2rem;
+}
+
+.finish_screen {
+  padding: 2.5rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #17202a;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.finish_screen p {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.finish_screen button {
+  margin: 1.5rem 0;
+  padding: 0.8rem 2.5rem;
+  background-color: #28a745;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.finish_screen button:hover {
+  background-color: #218838;
+}
